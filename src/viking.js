@@ -57,9 +57,10 @@ class Saxon extends Soldier {
 
   receiveDamage(damage) {
 
-    
+    this.damage += this.strength;
     this.health -= damage;
-    this.health;
+    
+
   if (this.health > 0){
     return `A Saxon has received ${damage} points of damage`;
       } else { 
@@ -84,7 +85,52 @@ class Saxon extends Soldier {
 
 
 // War
-class War {}
+class War {
+
+  vikingArmy = [];
+
+
+
+
+  saxonArmy = [];
+
+  addViking(viking) {
+this.vikingArmy.push(viking);
+    
+  }
+
+  addSaxon(saxon) {
+    
+    this.saxonArmy.push(saxon);
+ 
+}
+
+vikingAttack() {
+  return ;
+}
+
+saxonAttack(){
+  this.health -= damage;
+  this.health;
+  
+}
+
+showStatus() {
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
